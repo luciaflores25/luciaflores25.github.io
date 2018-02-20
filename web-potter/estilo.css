@@ -1,0 +1,163 @@
+		
+		/*******Estilo página de inicio********/
+
+		body{background-image: url(img/fondoBody.jpg);
+			background-attachment: fixed;}
+
+		#wrapper{width: 980px;
+				font-family: 'Life Savers', cursive;
+				margin: 0 auto;}
+
+		header{background-image: url(img/header.png);
+				height: 152px;
+				text-align: center;}
+
+		#rotulo{width:300px;
+				height:90px;
+				position: relative;
+				top: 50px;
+				left: -280px;}
+
+		nav{background-color: brown;
+			text-align: center;
+			padding: 15px;
+			font-weight: bold;
+			margin-left: -25px;
+			border-radius: 10px;
+			box-shadow: 9px 13px 40px 9px rgba(0,0,0,0.75);}
+
+		nav a{color: white;
+			text-decoration: none;
+			transition-duration: 0.3s;
+			}
+
+		nav a:hover{color: rgb(255,255,98);
+					font-size: 18px;}
+
+		nav span{padding: 15px;}
+
+		section {background-image: url(img/pergamino.jpg);
+				margin-left: -20px;
+				border-radius: 10px;
+				box-shadow: 9px 13px 40px 9px rgba(0,0,0,0.75);
+				height: 580px;}
+
+		#tituloIndex {font-size: 40px;
+					width: 600px;
+					z-index: 1;
+					font-family: 'Felipa', cursive;
+					position: relative;
+					top: -375px;
+					left: 209px;}
+
+		footer{background-color: brown;
+			text-align: center;
+			padding: 8px;
+			color: white;
+			font-weight: bold;
+			margin-left: -25px;
+			border-radius: 10px;
+			box-shadow: 9px 13px 40px 9px rgba(0,0,0,0.75);}
+
+		#dobby{position: relative;
+				left: 372px;
+				top: 173px;}
+
+		#lechuza{z-index: 1;
+				width: 250px;
+				height: 280px;
+				animation-name: mover;
+				animation-duration: 2s;
+				animation-direction: alternate;
+				animation-iteration-count: infinite;
+				position: relative;
+				left: 15px;
+				top: -120px;}
+
+		@keyframes mover {
+			from {
+				top: -120px;
+			}
+
+			to {
+				top: -85px;
+			}
+		}
+
+		#subtitulo{position: relative;
+					width: 681px;
+					font-size: 22px;
+					font-weight: bold;
+					left: 204px;
+					top: -400px;}
+
+		#historia {height: 243px;
+    				width: 506px;
+					font-weight: bold;
+					font-size: 18px;
+					position: relative;
+					left: 225px;
+					top: -390px;}
+
+		/*Esto es una imagen pequeña transparente que la he usado para que cuando se baje el scroll
+		se vea el mapa entero y se quede arriba el footer*/
+		#paraVerMapa{width: 50px;	
+				height: 620px;}
+
+		/*******Estilo página Harry Potter********/
+
+		.caratulas {width: 170px;
+					border: brown 3px solid;
+					margin: 10px;
+					height: 232px;}
+
+		#hp1{margin-left: 115px;}
+
+		#hp5{margin-left: 115px;}
+
+		#tituloHP{font-size: 27px;
+			width: 600px;
+			font-family: 'Felipa', cursive;
+			position: relative;
+			left: 180px;
+			top: 10px;}
+
+		#retroceso{margin-left: 15px;
+				margin-top: 15px;}
+
+		#tituloSubPagHP{font-size: 32px;
+						width: 600px;
+						font-family: 'Felipa', cursive;
+						position: relative;
+						left: 300px;
+						top: -70px;}
+
+	/*Estilo conjunto de las páginas de las casas de Hogwarts*/
+
+		.tituloCasas{
+			font-size: 50px;
+			width: 600px;
+			font-family: 'Felipa', cursive;
+			position: relative;
+			left: 300px;
+			bottom: 120px;
+		}
+
+		.logoCasas{
+			width: 100px;
+			height: 120px;
+			position: relative;
+			top: 15px;
+			left: 600px;
+		}
+
+		.textoCasas{
+			font-family: 'Life Savers', cursive;
+			font-weight: bold;
+			font-size: 19px;
+			width:700px;
+			height: 152px; 
+			position: relative;
+			left: 180px;
+			bottom: 125px;
+		}

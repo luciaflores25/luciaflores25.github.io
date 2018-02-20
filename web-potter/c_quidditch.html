@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link href="img/favicon.ico" rel="shortcut icon">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<link href="https://fonts.googleapis.com/css?family=Felipa" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Life+Savers" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<title>Harry potter - Quidditch</title>
+	<style>
+
+		#campoQuidditch{
+			background-image: url(img/campoQuidditch.jpg);
+			z-index: 0;
+			position: absolute;
+			left: 260px;
+			width:800px;
+			height: 580px;
+			border-radius: 10px;
+			opacity: 0.3;
+		}
+
+		#logo{
+			width:270px;
+			height: 100px;
+			position: relative;
+			top: 5px;
+			left: 350px;
+			z-index: 3;
+		}
+
+		#quidditch1{
+			font-family: 'Life Savers', cursive;
+			font-weight: bold;
+			font-size: 18px;
+			margin: 0px;
+			width:790px;
+			height: 152px; 
+			position: relative;
+			left: 110px;
+			top: 40px;
+		}
+
+		#quidditch2{
+			font-family: 'Life Savers', cursive;
+			font-weight: bold;
+			font-size: 18px;
+			margin: 0px;
+			width:780px;
+			height: 152px; 
+			position: relative;
+			left: 110px;
+		}
+
+		#cajaPelotas{
+			width: 220px;
+			height: 220px;
+			position: relative;
+			left: 550px;
+			bottom: 120px;
+		}
+
+		#equipoQuidditch{
+			width: 280px;
+			height: 175px;
+			border-radius: 15px;
+			position: relative;
+			bottom: 130px;
+			right: 180px;
+
+		}
+
+		#snitch {height: 70px;
+				width: 120px;
+				margin-top: 200px;
+				position: relative;
+				z-index: 4;
+				animation-name: mover;
+				animation-duration: 10s;
+				animation-direction: alternate;
+				animation-iteration-count: infinite;
+		}
+
+		@keyframes mover {
+			from {
+				top: -650px;
+			}
+
+			to {
+				top: -50px;
+			}
+		}
+</style>
+<script>
+		$(document).ready(function() {
+			moverSnitch();				
+		})
+
+		function moverSnitch() {
+			var y = parseInt(Math.random()*600) +1;
+			var x = parseInt(Math.random()*1000) +1;
+			$("#snitch").animate({top: y, left: x},3000,);
+
+			moverSnitch();
+		}
+
+	</script>
+	
+</head>
+<body>
+	<div id="wrapper">
+		<header>
+			<img src="img/HarryPotter.png" id="rotulo" alt="Aparecen personajes de la saga Harry Poter, Hagrid, Albus Dumbledore, Lord Voldemort, Harry Potter, Hermionne, Ron y Draco Malfoy, respectivamente de izquierda a derecha"/>
+		</header>
+		<nav>
+			<span><a href="index.html">INICIO</a></span> <span><a href="a_HarryPotter.html">SAGA</a></span> <span><a href="b_amigosEnemigos.html">AMIGOS y ENEMIGOS</a></span> <span><a href="c_quidditch.html">QUIDDITCH</a></span><span><a href="d_horrocruxes.html">HORROCRUXES</a></span><span><a href="e_reliquias.html">RELIQUIAS</a></span><span><a href="f_contacto.html">CONTACTO</a></span>
+		</nav>
+		<section>
+
+			<div id="campoQuidditch"></div>
+			<img id="logo" src="img/logoQuidditch.png" alt="En esta imagen aparece la palabra quidditch con dos escobas haciendo una X">
+
+			<div id="quidditch1">La duración de un encuentro de Quidditch es impredecible e indefinida. El juego termina cuando la Snitch dorada ha sido atrapada por alguno de los Buscadores. Mientras tanto, el juego sigue. El record de duración de un partido de Quidditch esta en 3 meses, donde tenían que cambiar los jugadores constantemente.</div>
+
+			<div id="quidditch2">Como norma general, una vez encima de las escobas y una vez empezado el partido, no se puede hechizar a ningún jugador, ni usar ningún objeto mágico como sería la varita, así también están prohibidas el uso de cualquier poción mágica tales como el "Felix Felicis" o poción de la suerte, la cual está estrictamente prohibida para cualquier evento deportivo.</div>
+			
+			<img id="snitch" src="img/snitch.png" alt="En esta imagen aparece la snitch qe está revoloteando">
+
+			<img id="cajaPelotas" src="img/cajaPelotas.png" alt="En esta imagen aparece el baúl donde se guardan todas las pelotas de quidditch">
+
+			<img id="equipoQuidditch" src="img/equipoQuidditch.jpg" alt="En esta imagen aparece parte del equipo de quiddich de Gryffindor preparados para empezar un partido">
+
+
+		</section>
+		<footer>
+			Página creada por: Lucía Flores Padilla - Trabajo Lenguaje de Marcas - diciembre 2017
+		</footer>
+		<img id="paraVerMapa" src="img/transparente.png" alt="Foto transparente para ponerla altura y que se vea el mapa del fondo"/>
+	</div>
+</body>
+</html>

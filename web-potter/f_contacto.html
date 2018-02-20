@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link href="img/favicon.ico" rel="shortcut icon">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<link href="https://fonts.googleapis.com/css?family=Felipa" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Life+Savers" rel="stylesheet">
+	<title>Harry potter - Contacto</title>
+	<style type="text/css">
+		body{overflow-x:hidden;}
+
+		*{margin: 0;
+		padding: 0;}
+
+		#formulario{width: 260px;
+					height: 480px;
+					background: #6C1C18;
+					border-radius: 10px;
+					border: 2px solid black;
+					box-shadow: 22px 21px 73px 3px rgba(0,0,0,0.74);
+					position: relative;
+					top: 20px;
+					left: 35px;
+					padding: 30px;
+					float: left;}
+
+		#formulario h2{font-size: 24px;
+						color: white;
+						text-decoration: underline;}
+
+		form p{font-weight: bold;
+				color: white;
+				margin-top: 12px;}
+
+		input[type="text"], [type="email"]{
+			margin-top: 2px;
+			width: 100%;
+			background: #EA8A61;
+			border-radius: 10px;
+			padding-left: 5px;
+			height: 25px;
+		}
+
+		input[type="submit"], [type="reset"]{
+			width: 100px;
+			height: 25px;
+			font-size: 16px;
+			font-weight: bold;
+			margin-top: 10px;
+			background: #EA8A61;
+			float: right;
+		}
+
+		#tituloMapa{
+					position: relative;
+					top: 25px;
+					left: 60px;}
+
+		#mapaHogwarts{clear: both;
+					position: relative;
+					top: -460px;
+					left: 430px;}
+
+		#casas{position: relative;
+				top: -450px;
+				left: 400px;}
+
+		td img{width: 150px;
+		text-align: center;}
+
+		table{margin: 30px;
+			position: relative;
+			top: -470px;
+			left: 350px;}
+
+		#escudoHogwarts{width: 140px;
+						height: 130px;
+						position: relative;
+						top: -900px;
+						left: 170px;}
+
+
+	</style>
+</head>
+<body>
+	<div id="wrapper">
+		<header>
+			<img src="img/HarryPotter.png" id="rotulo" alt="Aparecen personajes de la saga Harry Poter, Hagrid, Albus Dumbledore, Lord Voldemort, Harry Potter, Hermionne, Ron y Draco Malfoy, respectivamente de izquierda a derecha" />
+		</header>
+		<nav>
+			<span><a href="index.html">INICIO</a></span> <span><a href="a_HarryPotter.html">SAGA</a></span> <span><a href="b_amigosEnemigos.html">AMIGOS y ENEMIGOS</a></span> <span><a href="c_quidditch.html">QUIDDITCH</a></span><span><a href="d_horrocruxes.html">HORROCRUXES</a></span><span><a href="e_reliquias.html">RELIQUIAS</a></span><span><a href="f_contacto.html">CONTACTO</a></span>
+		</nav>
+		<section>
+
+			<div id="formulario">
+				<h2>Inscripción en Hogwarts</h2>
+				<form action="" method="get">
+					<p>Nombre y Apellidos: </p>
+					<input type="text" name="nombre" placeholder="Introdue tu nombre completo..." size="30"></br>
+
+					<p>Sexo: </p>
+					<p><input type="radio" name="sexo" value="masculino">
+					<label>Mago </label></p>
+
+					<p><input type="radio" name="sexo" value="femenino">
+					<label>Maga </label></p>
+
+					<p><input type="radio" name="sexo" value="otro" checked="checked">
+					<label>Otro </label></p>
+
+					<p>Dirección: </p>
+					<input type="text" name="direccion" placeholder="Introdue tu dirección..." size="30"></br>
+
+					<p>Teléfono</p>
+					<input type="text" name="telefono" placeholder="Introdue tu teléfono..." size="30"></br>
+
+					<p>Email: </p>
+					<input type="email" name="email" placeholder="Introdue tu email..." size="30"></br>
+
+					<p><input type="checkbox" name="acepto">
+					<label>Acepto las condiciones de inscripción </label></p>
+
+					<input type="submit" name="enviar" value="Inscribirse">
+					<input type="reset" name="borrar" value="Borrar">
+
+				</form>
+			</div>
+			
+				<h2 id="tituloMapa">Para que no te pierdas, aquí está la ubicación de Hogwarts</h2>
+			<div id="mapaHogwarts">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2473.355775388834!2d-0.4199296167641899!3d51.68993421115546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876402ee3a4f74d%3A0x5dc54285b607c593!2sWarner+Bros.The+Making+of+Harry+Potter.!5e0!3m2!1ses!2ses!4v1513550118553" width="500" height="250" frameborder="0" allowfullscreen></iframe>
+			</div>
+
+			<h2 id="casas">Y estas son las 4 casas en las que puedes entrar:</h2>
+
+			<table>
+				<tr>
+					<td><a href="o_gryffindor.html"><img src="img/Gryffindor.png" alt="En esta imagen aparece el escudo de Gryffindor"></a></th>
+					<td><a href="p_hufflepuff.html"><img src="img/Hufflepuff.png" alt="En esta imagen aparece el escudo de Hufflepuff"></a></td>
+					<td><a href="q_ravenclaw.html"><img src="img/Ravenclaw.png" alt="En esta imagen aparece el escudo de Ravenclaw"></a></td>
+					<td><a href="r_slytherin.html"><img src="img/Slythering.png" alt="En esta imagen aparece el escudo de Slythering"></a></td>
+				</tr>
+			</table>
+			<img id="escudoHogwarts" src="img/Hogwarts.png" alt="En esta imagen aparece el escudo de Hogwarts">
+		</section>
+		<footer>
+			Página creada por: Lucía Flores Padilla - Trabajo Lenguaje de Marcas - diciembre 2017
+		</footer>
+		<img id="paraVerMapa" src="img/transparente.png" alt="Foto transparente para ponerla altura y que se vea el mapa del fondo"/>
+	</div>
+</body>
+</html>
