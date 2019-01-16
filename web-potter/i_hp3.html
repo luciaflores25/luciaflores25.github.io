@@ -1,86 +1,102 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="utf-8">
-	<link href="img/favicon.ico" rel="shortcut icon">
-	<link rel="stylesheet" type="text/css" href="estilo.css">
-	<link href="https://fonts.googleapis.com/css?family=Felipa" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Life+Savers" rel="stylesheet">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<title>HP 3</title>
-	<style type="text/css">
-		#mapaTravesuras{width: 100px;
-						height:60px;
-						border-radius: 15px;
-						box-shadow: 17px 18px 47px 1px rgba(0,0,0,0.75);
-						position: relative;
-						left: 880px;
-						top: -290px;}
+    <meta charset="utf-8">
+    <link href="img/favicon.ico" rel="shortcut icon">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <link href="https://fonts.googleapis.com/css?family=Felipa" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Life+Savers" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>HP 3</title>
+    <style type="text/css">
+        #mapaTravesuras {
+            width: 100px;
+            height: 60px;
+            border-radius: 15px;
+            box-shadow: 17px 18px 47px 1px rgba(0, 0, 0, 0.75);
+            position: relative;
+            left: 880px;
+            top: -290px;
+        }
+        
+        #resumenAzkaban1 {
+            font-family: 'Life Savers', cursive;
+            font-weight: bold;
+            font-size: 19px;
+            margin: 0px;
+            width: 500px;
+            height: 152px;
+            position: relative;
+            left: 430px;
+            top: -280px;
+        }
+        
+        #tiaGlobo {
+            width: 330px;
+            height: 220px;
+            border-radius: 15px;
+            position: relative;
+            left: -50px;
+            top: -65px;
+        }
+        
+        #resumenAzkaban2 {
+            font-family: 'Life Savers', cursive;
+            font-weight: bold;
+            font-size: 19px;
+            margin: 0px;
+            width: 510px;
+            height: 152px;
+            position: relative;
+            left: 50px;
+            top: -190px;
+        }
+        
+        #patronusPadre {
+            width: 330px;
+            height: 220px;
+            border-radius: 15px;
+            position: relative;
+            left: 580px;
+            top: -365px;
+        }
+    </style>
 
-		#resumenAzkaban1{font-family: 'Life Savers', cursive;
-						font-weight: bold;
-						font-size: 19px;
-						margin: 0px;
-						width:500px;
-						height: 152px; 
-						position: relative;
-						left: 430px;
-						top: -280px;}
-
-		#tiaGlobo{width: 330px;
-					height: 220px;
-					border-radius: 15px;
-					position: relative;
-					left: -50px;
-					top: -65px;}
-
-		#resumenAzkaban2{font-family: 'Life Savers', cursive;
-						font-weight: bold;
-						font-size: 19px;
-						margin: 0px;
-						width:510px;
-						height: 152px; 
-						position: relative;
-						left: 50px;
-						top: -190px;}
-
-		#patronusPadre{width: 330px;
-					height: 220px;
-					border-radius: 15px;
-					position: relative;
-					left: 580px;
-					top: -365px;}
-	</style>
-	
 </head>
+
 <body>
-	<div id="wrapper">
-		<header>
-			<img src="img/HarryPotter.png" id="rotulo" alt="Aparecen personajes de la saga Harry Poter, Hagrid, Albus Dumbledore, Lord Voldemort, Harry Potter, Hermionne, Ron y Draco Malfoy, respectivamente de izquierda a derecha" />
-		</header>
-		<nav>
-			<span><a href="index.html">INICIO</a></span> <span><a href="a_HarryPotter.html">SAGA</a></span> <span><a href="b_amigosEnemigos.html">AMIGOS y ENEMIGOS</a></span> <span><a href="c_quidditch.html">QUIDDITCH</a></span><span><a href="d_horrocruxes.html">HORROCRUXES</a></span><span><a href="e_reliquias.html">RELIQUIAS</a></span><span><a href="f_contacto.html">CONTACTO</a></span>
-		</nav>
-		<section>
-			<a href="2HarryPotter.html"><img src="img/retroceso.png" id="retroceso" alt="flecha para volver a elegir cualquier carátula de las películas"/></a>
+    <div id="wrapper">
+        <header>
+            <img src="img/HarryPotter.png" id="rotulo" alt="Aparecen personajes de la saga Harry Poter, Hagrid, Albus Dumbledore, Lord Voldemort, Harry Potter, Hermionne, Ron y Draco Malfoy, respectivamente de izquierda a derecha" />
+        </header>
+        <nav>
+            <span><a href="index.html">INICIO</a></span> <span><a href="a_HarryPotter.html">SAGA</a></span> <span><a href="b_amigosEnemigos.html">AMIGOS y ENEMIGOS</a></span> <span><a href="c_quidditch.html">QUIDDITCH</a></span><span><a href="d_horrocruxes.html">HORROCRUXES</a></span><span><a href="e_reliquias.html">RELIQUIAS</a></span><span><a href="f_contacto.html">CONTACTO</a></span>
+        </nav>
+        <section>
+            <a href="a_HarryPotter.html"><img src="img/retroceso.png" id="retroceso" alt="flecha para volver a elegir cualquier carátula de las películas" /></a>
 
-			<h2 id="tituloSubPagHP">Harry Potter y el Prisionero de Azkaban</h2>
+            <h2 id="tituloSubPagHP">Harry Potter y el Prisionero de Azkaban</h2>
 
-			<img src="img/mapaTravesuras.gif" id="mapaTravesuras" alt="Gif en el que va apareciendo el mapa del Merodeador"/>
+            <img src="img/mapaTravesuras.gif" id="mapaTravesuras" alt="Gif en el que va apareciendo el mapa del Merodeador" />
 
-			<img src="img/tiaGlobo.jpg" id="tiaGlobo" alt="En esta imagen aparece la tía marge de Harry potter inflada como un globo y volando por los aires"/>
+            <img src="img/tiaGlobo.jpg" id="tiaGlobo" alt="En esta imagen aparece la tía marge de Harry potter inflada como un globo y volando por los aires" />
 
-			<div id="resumenAzkaban1">Igual que en las dos primeras partes de la saga <em>Harry Potter y la Piedra Filosofal</em> y <em> Harry Potter y la Cámara Secreta</em>, Harry aguarda con impaciencia el inicio del tercer curso en el colegio Hogwarts. Trás haber cumplido los trece años, solo y lejos de sus amigos de Hogwarts, Harry se pelea con su bigotuda tía Marge a la que convierte en globo, y debe huír en un autobus mágico. Mientras tanto, de la prisión de Azkaban se ha escapado un terrible villano.</div>
+            <div id="resumenAzkaban1">Igual que en las dos primeras partes de la saga <em>Harry Potter y la Piedra Filosofal</em> y <em> Harry Potter y la Cámara Secreta</em>, Harry aguarda con impaciencia el inicio del tercer curso en el colegio Hogwarts. Trás haber cumplido
+                los trece años, solo y lejos de sus amigos de Hogwarts, Harry se pelea con su bigotuda tía Marge a la que convierte en globo, y debe huír en un autobus mágico. Mientras tanto, de la prisión de Azkaban se ha escapado un terrible villano.</div>
 
-			<div id="resumenAzkaban2">Sirius Black, un asesino en serie con poderes mágicos que fue complice de Lord Voldemort y que parece dispuesto a eliminar a Harry del mapa. Y por si esto fuera poco, Harry deberá enfrentarse también a unos terribles mostruos, los dementores, seres abominables capaces de robarles la felicidad a los magos y de borrar todo recuerdo hermoso de aquellos que osan mirarlos. Lo que ninguno de estos malvados personajes saben es que Harry, con la ayuda de sus fieles amigos Ron y Hermione, es capaz de todo y mucho más.</div>
+            <div id="resumenAzkaban2">Sirius Black, un asesino en serie con poderes mágicos que fue complice de Lord Voldemort y que parece dispuesto a eliminar a Harry del mapa. Y por si esto fuera poco, Harry deberá enfrentarse también a unos terribles mostruos, los dementores,
+                seres abominables capaces de robarles la felicidad a los magos y de borrar todo recuerdo hermoso de aquellos que osan mirarlos. Lo que ninguno de estos malvados personajes saben es que Harry, con la ayuda de sus fieles amigos Ron y Hermione,
+                es capaz de todo y mucho más.</div>
 
-			<img src="img/patronusPadre.jpg" id="patronusPadre" alt="Aparece Harry Potter conjurando el patronus de su padre"/>
+            <img src="img/patronusPadre.jpg" id="patronusPadre" alt="Aparece Harry Potter conjurando el patronus de su padre" />
 
-		</section>
-		<footer>
-			Página creada por: Lucía Flores Padilla - Trabajo Lenguaje de Marcas - diciembre 2017
-		</footer>
-		<img id="paraVerMapa" src="img/transparente.png" alt="Foto transparente para ponerla altura y que se vea el mapa del fondo"/>
-	</div>
+        </section>
+        <footer>
+            Página creada por: Lucía Flores Padilla - Trabajo Lenguaje de Marcas - diciembre 2017
+        </footer>
+        <img id="paraVerMapa" src="img/transparente.png" alt="Foto transparente para ponerla altura y que se vea el mapa del fondo" />
+    </div>
 </body>
+
 </html>
